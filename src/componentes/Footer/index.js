@@ -1,21 +1,17 @@
-import Logo from '../Logo'
-import OpcoesHeader from '../OpcoesHeader'
-import IconesHeader from '../IconesHeader'
+import OpcoesHeader from '../OpcoesFooter'
 import styled from 'styled-components'
 
-const HeaderContainer = styled.header`
+const FooterContainer = styled.header`
     background-color: #FFF;
     display: flex;
     justify-content: center;
 `
 
-function Header() {
+function Footer() {
     return (
-        <HeaderContainer>
-            <Logo/>
-            <OpcoesHeader/>
-            <IconesHeader/>
-        </HeaderContainer>
+        <FooterContainer>
+            <OpcoesFooter/>
+        </FooterContainer>
     )
 }
 

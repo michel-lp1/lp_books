@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Opcao = styled.li`
+const Informacao = styled.li`
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -12,20 +12,20 @@ const Opcao = styled.li`
     min-width: 120px;
 `
 
-const Opcoes = styled.ul`
+const Informacoes = styled.ul`
     display: flex;
 `
 
-const textoOpcoes = ['CATEGORIAS', 'FAVORITOS', 'MINHA ESTANTE']
+const textoInformacoes = ['CATEGORIAS', 'FAVORITOS', 'MINHA ESTANTE']
 
-function OpcoesHeader() {
+function OpcoesFooter() {
     return (
-        <Opcoes>
-            { textoOpcoes.map( (texto) => (
-                <Opcao><p>{texto}</p></Opcao>
+        <Informacoes>
+            {textoInformacoes.map( (texto) => (
+                <Informacao><p>{texto}</p></Informacao>
             ) ) }
-      </Opcoes>
+      </Informacoes>
     )
 }
 
-export default OpcoesHeader
+export default OpcoesFooter

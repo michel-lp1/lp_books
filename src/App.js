@@ -16,6 +16,7 @@ function App() {
       <Header />
       <Pesquisa />
       <UltimosLancamentos />
+      <Footer />
     </AppContainer>
   );
 }
